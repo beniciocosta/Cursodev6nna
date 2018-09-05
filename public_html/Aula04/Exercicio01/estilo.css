@@ -1,1 +1,17 @@
-
+#InformacoesPessoais{
+    background-color:lightblue;
+}
+#DadosProfissionais{
+    background-color: lightcoral;
+}
+#areatexto{
+    background-color: khaki;
+}
+#Acoes{
+    background-color: lightgreen;
+}
+#enviar{
+    
+    background-color: green;
+   
+}

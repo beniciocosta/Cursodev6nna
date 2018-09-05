@@ -1,24 +1,26 @@
 
 <html>
     <head>
-        <title>TODO supply a title</title>
+        <title>Cadastro de Curriculum</title>
         <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       <link href="estilo.css" rel="stylesheet">
     </head>
     <body>
-        <center><h1> FORMULARIO DE CADASTRO </h1></center>
- <form action="CadastroSucesso.html" method="post">
-            <fieldset>
-                <legend>Informações Pessoais:</legend>
-                <p>Nome: <input type="text" size="30"></p>
-                <p>E-mail: <input type="text" size="30"></p>
-                <p>Cidade: <input type="text" size="5"></p>
-                <p> Selecione o estado</p>
+     
+    <center><h1> FORMULARIO DE CADASTRO </h1></center> 
+    <div>
+    <form id="InformacoesPessoais" >
+        <fieldset>
+            <legend>Informações Pessoais:</legend>
+            <p>Nome: <input type="text" size="30"></p>
+            <p>E-mail: <input type="text" size="30"></p>
+            <p>Cidade: <input type="text" size="5"></p>
+            <p> Selecione o estado</p>
             <select name="Estado">
 
 
                 <option value="Pará">Pará</option>
-                <option value="Manaus">Manaus</option>
+                <option value="Amazonas">Amazonas</option>
                 <option value="Amapá">Amapá</option>
                 <option value="Piauí">Piauí</option>
                 <option value="Alagoas">Alagoas</option>
@@ -29,45 +31,48 @@
                 <option value="Santa Catarina">Santa Catarina</option>
                 <option value="Espirito Santo">Espirito Santo</option>
                 <option value="Mato Grosso">Mato Grosso</option>
-               
+
             </select>
-            </fieldset>
-     </form>
-<form action="CadastroSucesso.html" method="post">
-            <fieldset>
-             <legend>Dados profissionais:</legend>
-         
+        </fieldset>
+    </form >
+        </div>
+    <form id="DadosProfissionais">
+        <fieldset>
+            <legend>Dados profissionais:</legend>
+
             <p> Cargo Pretendido:</p>
             <input type="radio" name="Analista Sistema"> Analista de Sistemas
             <input type="radio" name="Analista BD"> Analista de Banco de dados
-             <input type="radio" name="Analista de Suporte"> Analista de Suporte
-             <br>
-             <p> Tecnologias de Interesse:</p>
-            <input type="checkbox" name="Futebol" value="Futebol"/> Java
-                <input type="checkbox" name="Futebol" value="Futebol"/> HTML,CSS
-            <input type="checkbox" name="Futebol" value="Futebol"/> Javascript
-            <input type="checkbox" name="Futebol" value="Futebol"/> SQL
-           
-           <br>
-           <p> Mini Curriculum:</p>
-            <textarea rows="10" cols="30">
+            <input type="radio" name="Analista de Suporte"> Analista de Suporte
+            <br>
+            <p> Tecnologias de Interesse:</p>
+            <input type="checkbox"  value="Java"/> Java
+            <input type="checkbox"  value="HTML,CSS"/> HTML,CSS
+            <input type="checkbox"  value="Javascript"/> Javascript
+            <input type="checkbox"  value="SQL"/> SQL
+
+            <br>
+            <p> Mini Curriculum:</p>
+            <textarea id="areatexto" rows="10" cols="50">
 		      
             </textarea>
-            <br>
-
-            <input type="submit" value="Enviar">
+    </form>
+    <form id="Acoes">
+    <fieldset>
+        <legend>Ações:</legend>
+        <br>
+        <form action="Enviado.html" method="post">
+            style="background-color: #aaaaaa
+            <input id="enviar"type="submit" value="Enviar">
             <input type="submit" value="Cancelar">
-            <input type="reset" value="Limpar">
-            <input type="hidden" name="Acão" value="Cadastro Pessoa">
 
-            
             </fieldset>
-     
 
-</form>
-        
-        
-        
-        
+
+        </form>
+
+
+
+
     </body>
 </html>
