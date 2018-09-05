@@ -10,11 +10,11 @@
     <center><h1> FORMULARIO DE CADASTRO </h1></center> 
     <div>
     <form id="InformacoesPessoais" >
-        <fieldset>
+        <fieldset id="borda1">
             <legend>Informações Pessoais:</legend>
-            <p>Nome: <input type="text" size="30"></p>
-            <p>E-mail: <input type="text" size="30"></p>
-            <p>Cidade: <input type="text" size="5"></p>
+            <p>Nome: <input id="nome"  type="text" size="30" ></p>
+            <p>E-mail: <input id="email" type="text" size="30"></p>
+            <p>Cidade: <input id="Cidade" type="text" size="20"></p>
             <p> Selecione o estado</p>
             <select name="Estado">
 
@@ -37,7 +37,7 @@
     </form >
         </div>
     <form id="DadosProfissionais">
-        <fieldset>
+        <fieldset id="borda2">
             <legend>Dados profissionais:</legend>
 
             <p> Cargo Pretendido:</p>
@@ -58,11 +58,11 @@
             </textarea>
     </form>
     <form id="Acoes">
-    <fieldset>
+    <fieldset id="borda3">
         <legend>Ações:</legend>
         <br>
         <form action="Enviado.html" method="post">
-            style="background-color: #aaaaaa
+            
             <input id="enviar"type="submit" value="Enviar">
             <input type="submit" value="Cancelar">
 
